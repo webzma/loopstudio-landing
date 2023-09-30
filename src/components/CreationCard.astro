@@ -1,0 +1,17 @@
+---
+interface Props {
+  bgDesktopImg: string;
+  bgMobileImg: string;
+  title: string;
+}
+const { bgDesktopImg, bgMobileImg, title } = Astro.props;
+import CreationsName from "./CreationsName.astro";
+---
+
+<article
+  class=`${bgMobileImg} ${bgDesktopImg} relative h-[170px] sm:h-[310px] md:h-[380px] lg:h-[420px] bg-no-repeat bg-cover w-full flex items-end px-10 pb-10 text-white hover:text-black`
+>
+  <div class="w-full h-full hover:bg-white absolute top-0 left-0 opacity-90">
+  </div>
+  <CreationsName title={title} />
+</article>

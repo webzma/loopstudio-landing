@@ -1,0 +1,61 @@
+---
+import CreationCard from "./CreationCard.astro";
+import Wrapper from "./Wrapper.astro";
+---
+
+<section class="bg-white mt-40">
+  <Wrapper>
+    <header class="flex items-center justify-between mb-8">
+      <h2 class="text-2xl sm:text-4xl uppercase">Our creations</h2>
+      <button
+        class="border-2 border-black px-6 py-2 transition-opacity uppercase tracking-widest hover:bg-black hover:text-white"
+        >See all</button
+      >
+    </header>
+
+    <div
+      class="w-full grid lg:grid-cols-4 md:grid-cols-3 m-auto justify-center gap-6 grid-cols-1"
+    >
+      <CreationCard
+        title="Deep Earth"
+        bgDesktopImg="md:bg-[url(../../public/assets/desktop/image-deep-earth.jpg)]"
+        bgMobileImg="bg-[url(../../public/assets/mobile/image-deep-earth.jpg)]"
+      />
+      <CreationCard
+        title="Night Arcade"
+        bgDesktopImg="md:bg-[url(../../public/assets/desktop/image-night-arcade.jpg)]"
+        bgMobileImg="bg-[url(../../public/assets/mobile/image-night-arcade.jpg)]"
+      />
+      <CreationCard
+        title="Soccer Team VR"
+        bgDesktopImg="md:bg-[url(../../public/assets/desktop/image-deep-earth.jpg)]"
+        bgMobileImg="bg-[url(../../public/assets/mobile/image-deep-earth.jpg)]"
+      />
+      <CreationCard
+        title="The Grid"
+        bgDesktopImg="md:bg-[url(../../public/assets/desktop/image-grid.jpg)]"
+        bgMobileImg="bg-[url(../../public/assets/mobile/image-grid.jpg)]"
+      />
+      <CreationCard
+        title="From up above vr"
+        bgDesktopImg="md:bg-[url(../../public/assets/desktop/image-from-above.jpg)]"
+        bgMobileImg="bg-[url(../../public/assets/mobile/image-from-above.jpg)]"
+      />
+      <CreationCard
+        title="Pocket Borealis"
+        bgDesktopImg="md:bg-[url(../../public/assets/desktop/image-pocket-borealis.jpg)]"
+        bgMobileImg="bg-[url(../../public/assets/mobile/image-pocket-borealis.jpg)]"
+      />
+      <CreationCard
+        title="The curiosity"
+        bgDesktopImg="md:bg-[url(../../public/assets/desktop/image-curiosity.jpg)]"
+        bgMobileImg="bg-[url(../../public/assets/mobile/image-curiosity.jpg)]"
+      />
+      <CreationCard
+        title="Make it fisheye"
+        bgDesktopImg="md:bg-[url(../../public/assets/desktop/image-fisheye.jpg)]"
+        bgMobileImg="bg-[url(../../public/assets/mobile/image-fisheye.jpg)]"
+      />
+    </div>
+  </Wrapper>
+</section>

@@ -1,0 +1,14 @@
+---
+import HeaderLanding from "./HeaderLanding.astro";
+import HeroLanding from "./HeroLanding.astro";
+import NavLanding from "./NavLanding.astro";
+---
+
+<section
+  class="h-screen bg-no-repeat bg-cover bg-stone-900/50 bg-blend-darken bg-[url('../../public/assets/mobile/image-hero.jpg')] sm:bg-[url('../../public/assets/desktop/image-hero.jpg')]"
+>
+  <HeaderLanding>
+    <NavLanding />
+    <HeroLanding />
+  </HeaderLanding>
+</section>

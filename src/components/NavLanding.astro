@@ -1,0 +1,28 @@
+---
+import Hamburger from "./Hamburger.astro";
+import Logo from "./Logo.astro";
+---
+
+<nav class="flex justify-between pt-12 m-auto items-center">
+  <Logo />
+
+  <ul class="hidden md:flex items-center text-white font-bold gap-8">
+    <li>
+      <a href="/">About</a>
+    </li>
+    <li>
+      <a href="/">Careers</a>
+    </li>
+    <li>
+      <a href="/">Events</a>
+    </li>
+    <li>
+      <a href="/">Products</a>
+    </li>
+    <li>
+      <a href="/">Support</a>
+    </li>
+  </ul>
+
+  <Hamburger />
+</nav>

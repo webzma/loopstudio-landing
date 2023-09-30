@@ -1,0 +1,63 @@
+---
+import Logo from "./Logo.astro";
+import Wrapper from "./Wrapper.astro";
+---
+
+<section class="bg-black mt-36 sm:py-12 pt-12 pb-2">
+  <Wrapper>
+    <header
+      class="mb-8 flex sm:justify-between flex-col md:flex-row text-center gap-6 items-center"
+    >
+      <Logo />
+
+      <ul class="flex gap-4 items-center">
+        <li>
+          <a href="#">
+            <img src="../../public/assets/images/icon-facebook.svg" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="../../public/assets/images/icon-twitter.svg" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="../../public/assets/images/icon-pinterest.svg" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="../../public/assets/images/icon-instagram.svg" alt="" />
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <footer
+      class="flex sm:justify-between flex-col md:flex-row text-center gap-2"
+    >
+      <ul
+        class="flex items-center flex-col sm:flex-row text-white font-bold gap-2 justify-center"
+      >
+        <li>
+          <a href="/">About</a>
+        </li>
+        <li>
+          <a href="/">Careers</a>
+        </li>
+        <li>
+          <a href="/">Events</a>
+        </li>
+        <li>
+          <a href="/">Products</a>
+        </li>
+        <li>
+          <a href="/">Support</a>
+        </li>
+      </ul>
+
+      <p class="text-white mt-6 sm:m-0">2021 LoopStudio. All right reserved.</p>
+    </footer>
+  </Wrapper>
+</section>

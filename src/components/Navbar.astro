@@ -1,0 +1,35 @@
+---
+import Logo from "./Logo.astro";
+---
+
+<div class="navbar hidden pt-10 px-5 bg-black w-full h-full z-30 top-0 left-0">
+  <header class="flex justify-between">
+    <Logo />
+    <div class="iconCloseContainer cursor-pointer">
+      <img src="../../public/assets/images/icon-close.svg" alt="" />
+    </div>
+  </header>
+
+  <ul class="text-white mt-20 flex flex-col gap-16 uppercase text-2xl">
+    <li class="link_navbar">
+      <a href="#">About</a>
+    </li>
+    <li class="link_navbar">
+      <a href="#">Careers</a>
+    </li>
+    <li class="link_navbar">
+      <a href="#">Event</a>
+    </li>
+    <li class="link_navbar">
+      <a href="#">Products</a>
+    </li>
+  </ul>
+</div>
+
+<script>
+  const iconClose = document.querySelector(".iconCloseContainer");
+  iconClose.addEventListener("click", () => {
+    document.querySelector(".navbar").classList.add("hidden");
+    document.querySelector(".navbar").classList.remove("fixed");
+  });
+</script>

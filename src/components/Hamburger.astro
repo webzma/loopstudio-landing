@@ -1,0 +1,22 @@
+<div class="menuBtn-container cursor-pointer md:hidden">
+  <img src="../../public/assets/images/icon-hamburger.svg" alt="menu icon" />
+</div>
+
+<script>
+  const iconMenu = document.querySelector(".menuBtn-container");
+  const linksNavbar = document.querySelectorAll(".link_navbar");
+  const navbar = document.querySelector(".navbar");
+
+  iconMenu.addEventListener("click", () => {
+    navbar.classList.add("fixed");
+    navbar.classList.remove("hidden");
+  });
+
+  linksNavbar.forEach((link) => {
+    link.addEventListener("click", () => {
+      console.log("true");
+      navbar.classList.remove("fixed");
+      navbar.classList.add("hidden");
+    });
+  });
+</script>
